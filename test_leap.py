@@ -1,6 +1,7 @@
-
+import pytest
 import unittest
-import palindrome
+import coverage
+import Pytest-cov
 import Julius_McWilliams_hw1
 
 
@@ -22,4 +23,4 @@ class Tester(unittest.TestCase):
         self.assertEqual(result,True)
     def test_leappt3(self):
         result = Julius_McWilliams_hw1.leap(2100)
-        self.assertEqua(result,False)
+        self.assertEqual(result,False)
